@@ -138,7 +138,7 @@ This gives a centralized view of security analysis results.
 
 ## 📂 Project Structure
 
-```txt
+```bash
 phishing-detection-toolkit/
 │── app.py
 │── email_analyzer.py
@@ -159,3 +159,31 @@ phishing-detection-toolkit/
 │
 └── .github/workflows/
     └── python-ci.yml
+
+## ▶️ How to Run Locally
+
+Follow these steps to run the phishing detection toolkit on your local machine.
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/vengababu-X/phishing-detection-toolkit.git
+cd phishing-detection-toolkit
+
+## Install dependencies
+pip install -r requirements.txt
+
+## Run the application
+python app.py
+
+## Access the application
+   Open your browser and go to:
+http://127.0.0.1:5000
+
+### Example Scenario
+
+- Original website title: `Secure Login - Bank`
+- Current page title: `Verify Your Account Now`
+- Content hash mismatch
+- Page size differs by more than 10%
+
+➡️ Result: **Do Not Match → Page flagged as suspicious**
