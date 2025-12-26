@@ -17,4 +17,5 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Syntax check
-        run: python -m py_compile $(find . -name "*.py")
+        run: |
+          find . -type f -name "*.py" -print0 | xargs -0 python -m py_compile
