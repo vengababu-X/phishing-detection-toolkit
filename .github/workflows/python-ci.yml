@@ -5,6 +5,7 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v3
 
@@ -15,5 +16,5 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - - name: Syntax check
-  run: python -m py_compile phishguard_cli.py
+      - name: Syntax check
+        run: python -m py_compile $(find . -name "*.py")
