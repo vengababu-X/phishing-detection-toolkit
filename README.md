@@ -159,7 +159,7 @@ phishing-detection-toolkit/
 │
 └── .github/workflows/
     └── python-ci.yml
-
+```
 ## ▶️ How to Run Locally
 
 Follow these steps to run the phishing detection toolkit on your local machine.
@@ -178,12 +178,13 @@ python app.py
 ## Access the application
    Open your browser and go to:
 http://127.0.0.1:5000
-
+```
 ### Example Scenario
-
+```
 - Original website title: `Secure Login - Bank`
 - Current page title: `Verify Your Account Now`
 - Content hash mismatch
 - Page size differs by more than 10%
-
+```
+```
 ➡️ Result: **Do Not Match → Page flagged as suspicious**
